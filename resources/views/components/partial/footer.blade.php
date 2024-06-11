@@ -1,7 +1,7 @@
 {{-- Footer Section --}}
 <footer class="p-4 bg-primary-100 sm:p-6 antialiased">
-    <div class="mx-auto max-w-screen-xl">
-        <div class="sm:flex sm:items-center sm:justify-between">
+    <div class="mx-auto max-w-screen-lg">
+        <div class="sm:flex sm:items-center sm:justify-between mx-0 md:mx-8">
             <span class="text-sm text-primary-500 sm:text-center dark:text-primary-400">© 2024 <a
                     href="https://alfaruqy.me" class="hover:underline">Alfaruqy™</a>. All Rights Reserved.
             </span>

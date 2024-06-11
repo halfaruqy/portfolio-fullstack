@@ -1,4 +1,4 @@
-<div class="fixed top-[91%] left-0.5 transform translate-x-2 -translate-y-1/2 flex flex-col space-y-2 z-50">
+<div class="fixed top-[91%] left-0.5 transform translate-x-2 -translate-y-1/2 hidden md:flex flex-col space-y-2 z-50">
     <a href="https://wa.link/gh5vpo" target="_blank"
         class="social-media-link bg-primary-600 transition-all hover:bg-primary-700 text-primary-50 p-1.5 rounded-full">
         <svg class="w-5 h-5 text-primary-50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"

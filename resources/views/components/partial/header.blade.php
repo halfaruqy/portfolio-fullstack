@@ -6,7 +6,7 @@
             <a href="https://alfaruqy.me" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src={{ asset('images/alfaruqy-logo.png') }} class="h-8" alt="Alfaruqy Logo">
                 <span
-                    class="self-center text-2xl uppercase font-semibold whitespace-nowrap text-primary-50">Alfaruqy</span>
+                    class="self-center text-2xl uppercase font-semibold whitespace-nowrap text-primary-50 hidden md:block">Alfaruqy</span>
             </a>
             <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                 <a href="#contact"
