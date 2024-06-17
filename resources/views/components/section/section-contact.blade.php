@@ -6,26 +6,38 @@
             your business's website? Still have doubts whether your business needs a website or not? Or you just
             want to ask something about website for a business? No problem at all, just fill the form and I will
             contact you right away!</p>
-        <form action="#" class="space-y-8 pb-16 border-b border-primary-700">
+        <div id="notification" class="bg-primary-200 border-4 border-primary-400 rounded-lg p-4 hidden mb-12">
+            <p class="text-center text-primary-700">Your inquiry has been sent! I will reach out to you soon. Thanks 🙏😊
+            </p>
+        </div>
+        <form method="POST" id="inquiryForm" autocomplete="on" class="space-y-8 pb-16 border-b border-primary-700 block">
+            @csrf
+            <div>
+                <label for="name" class="block mb-2 text-sm font-medium text-primary-200">Your
+                    Name</label>
+                <input type="text" id="name" name="name"
+                    class="shadow-sm bg-primary-50 border border-primary-300 text-primary-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-primary-700 dark:border-primary-600 dark:placeholder-primary-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                    placeholder="Your name goes here... Ex: Alfaruqy" required>
+            </div>
             <div>
                 <label for="email" class="block mb-2 text-sm font-medium text-primary-200">Your
                     email</label>
-                <input type="email" id="email"
+                <input type="email" id="email" name="email"
                     class="shadow-sm bg-primary-50 border border-primary-300 text-primary-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-primary-700 dark:border-primary-600 dark:placeholder-primary-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                    placeholder="youremail@alfaruqy.me" required>
+                    placeholder="Your email goes here... Ex: contact@alfaruqy.me" required>
             </div>
             <div>
                 <label for="subject" class="block mb-2 text-sm font-medium text-primary-200">Subject</label>
-                <input type="text" id="subject"
+                <input type="text" id="subject" name="subject"
                     class="block p-3 w-full text-sm text-primary-900 bg-primary-50 rounded-lg border border-primary-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-primary-700 dark:border-primary-600 dark:placeholder-primary-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                    placeholder="Let me know how I can help you" required>
+                    placeholder="How I can help you... Ex: Need Website for My Business's Marketing" required>
             </div>
             <div class="sm:col-span-2">
                 <label for="message" class="block mb-2 text-sm font-medium text-primary-200">Your
                     message</label>
-                <textarea id="message" rows="6"
+                <textarea id="message" rows="6" name="message"
                     class="block p-2.5 w-full text-sm text-primary-900 bg-primary-50 rounded-lg shadow-sm border border-primary-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-primary-700 dark:border-primary-600 dark:placeholder-primary-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                    placeholder="Write your message or inquiry for me here..."></textarea>
+                    placeholder="Write your message or inquiry for me here..." required></textarea>
             </div>
             <button type="submit"
                 class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium rounded-lg group bg-gradient-to-br from-primary-600 to-primary-300 group-hover:from-primary-600 group-hover:to-primary-400 hover:text-primary-50 text-primary-50 focus:ring-4 focus:outline-none focus:ring-primary-200 dark:focus:ring-primary-800 cursor-pointer uppercase"><span
