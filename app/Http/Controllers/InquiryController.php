@@ -19,7 +19,6 @@ class InquiryController extends Controller
         ]);
 
         $details = $request->only('name', 'email', 'subject', 'message');
-        \Log::info('Form details:', $details);
 
         // Send email to admin
         Mail::to('halfaruqy@gmail.com')->queue(new ReceiveInquiry($details));

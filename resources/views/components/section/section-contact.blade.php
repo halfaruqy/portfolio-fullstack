@@ -10,27 +10,32 @@
             <p class="text-center text-primary-700">Your inquiry has been sent! I will reach out to you soon. Thanks 🙏😊
             </p>
         </div>
-        <form method="POST" id="inquiryForm" autocomplete="on" class="space-y-8 pb-16 border-b border-primary-700 block">
+        <form method="POST" id="inquiryForm" class="space-y-8 pb-16 border-b border-primary-700 block">
             @csrf
             <div>
                 <label for="name" class="block mb-2 text-sm font-medium text-primary-200">Your
                     Name</label>
-                <input type="text" id="name" name="name"
+                <input autocomplete="name" type="text" id="name" name="name"
                     class="shadow-sm bg-primary-50 border border-primary-300 text-primary-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-primary-700 dark:border-primary-600 dark:placeholder-primary-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                     placeholder="Your name goes here... Ex: Alfaruqy" required>
             </div>
             <div>
-                <label for="email" class="block mb-2 text-sm font-medium text-primary-200">Your
+                <label autocomplete="email" for="email" class="block mb-2 text-sm font-medium text-primary-200">Your
                     email</label>
                 <input type="email" id="email" name="email"
                     class="shadow-sm bg-primary-50 border border-primary-300 text-primary-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-primary-700 dark:border-primary-600 dark:placeholder-primary-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                     placeholder="Your email goes here... Ex: contact@alfaruqy.me" required>
             </div>
             <div>
-                <label for="subject" class="block mb-2 text-sm font-medium text-primary-200">Subject</label>
+                <label autocomplete="on" for="subject"
+                    class="block mb-2 text-sm font-medium text-primary-200">Subject</label>
                 <input type="text" id="subject" name="subject"
                     class="block p-3 w-full text-sm text-primary-900 bg-primary-50 rounded-lg border border-primary-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-primary-700 dark:border-primary-600 dark:placeholder-primary-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                     placeholder="How I can help you... Ex: Need Website for My Business's Marketing" required>
+            </div>
+            <div>
+                <input type="text" name="business-industry" id="business-industry" class="hidden invisible"
+                    autocomplete="off">
             </div>
             <div class="sm:col-span-2">
                 <label for="message" class="block mb-2 text-sm font-medium text-primary-200">Your

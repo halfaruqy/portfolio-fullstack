@@ -26,7 +26,7 @@
                     <img class="w-9 h-9 rounded-full" src="{{ asset('images/person1.webp') }}" alt="profile picture">
                     <div class="space-y-0.5 font-medium dark:text-white text-left">
                         <div>John Doe</div>
-                        <div class="text-sm font-light">Head of Marketing at
+                        <div class="text-sm font-light text-primary-500">Head of Marketing at
                             EP Construction
                         </div>
                     </div>
